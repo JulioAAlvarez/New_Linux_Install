@@ -7,6 +7,7 @@ sudo apt update -y ; sudo apt upgrade -y ; sudo apt autoremove -y ; sudo apt aut
 sudo apt install neofetch -y
 sudo apt install htop -y
 sudo apt install bpytop -y
+sudo apt install iftop -y
 
 # Linux personal settings wants
 sudo apt install gnome-tweaks -y
@@ -23,3 +24,12 @@ sudo timeshift --restore
 # Shell customizations
 sudo apt install zsh -y
 
+# Personal System Dependencies
+sudo apt install mongodb
+sudo systemctl start mongodb
+sudo systemctl enable mongodb
+sudo systemctl status mongodb
+
+sudo apt update
+sudo apt install mysql-server -y
+sudo mysql_secure_installation
