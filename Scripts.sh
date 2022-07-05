@@ -5,6 +5,9 @@
 # Chnage Default hostname, personally 'New Machine X 001' = NMX001 is my fave
 hostnamectl set-hostname Linux001 --static
 
+# Add Min and Max buttons quickly
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
 # Initial scripts to update & upgrade base defaults, w/ self-clean and restart
 sudo apt update
 sudo apt upgrade
@@ -33,13 +36,14 @@ sudo apt install nautilus-admin -y
 # In Home Directory, using Ctrl + H shows hidden files for ease of theming
 mkdir ~/.themes
 mkdir ~/.icons
+# I usually tend to use WhiteSur-Dark as my Shell & Legacy Application theme
 
 # Used for making backups 
 # The '--tag' determine the frequency of backups, D= daily, W = Weekly, etc
 # For '--restore' from backups
 sudo apt install timeshift -y 
 sudo timeshift --create --comments "001_backup" --tags W 
-sudo timeshift --restore
+sudo timeshift --restore    
 
 # Shell customizations
 sudo apt install zsh -y
@@ -71,3 +75,7 @@ flapack install zoom -y
 sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg # Codecs
 sudo apt install obs-studio -y
 sudo apt install gufw -y
+sudo apt install obsidian -y
+sudo apt install discord -y
+sudo apt install gimp -y
+
