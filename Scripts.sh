@@ -48,6 +48,7 @@ sudo timeshift --restore
 # Shell customizations
 sudo apt install zsh -y
 
+
 # Personal System Dependencies
 sudo apt install mongodb
 sudo systemctl start mongodb
@@ -78,4 +79,8 @@ sudo apt install gufw -y
 sudo apt install obsidian -y
 sudo apt install discord -y
 sudo apt install gimp -y
+sudo apt install tilix -y
 
+
+# This section is for JetBrains Tool Box
+# Actually, visit their website instead. I'll add this to auto version w/ checks.
