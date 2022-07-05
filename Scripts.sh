@@ -26,6 +26,7 @@ sudo apt install iftop -y
 
 # Linux personal settings wants
 sudo apt install gnome-tweaks -y
+sudo apt install gnome-shell-extensions
 sudo apt install ubuntu-restricted-extras -y
 sudo apt install nautilus-admin -y
 
@@ -39,7 +40,6 @@ mkdir ~/.icons
 sudo apt install timeshift -y 
 sudo timeshift --create --comments "001_backup" --tags W 
 sudo timeshift --restore
-
 
 # Shell customizations
 sudo apt install zsh -y
@@ -59,14 +59,15 @@ snap install hello-world && hello-world
 
 sudo apt install git git-lfs -y
 git-lfs install
-flatpak install gitkraken -y
-
 sudo apt install code -y
 sudo apt install vim -y
 sudo apt install kate -y
 sudo apt install vlc -y
+flatpak install gitkraken -y
+
 sudo pat install discord -y # Sometimes Discord from website is better tho
 flapack install zoom -y
+
 sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg # Codecs
 sudo apt install obs-studio -y
 sudo apt install gufw -y
