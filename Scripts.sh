@@ -49,7 +49,13 @@ sudo timeshift --restore
 sudo apt install zsh -y
 
 
-# Personal System Dependencies
+# Personal System Dependencies & Apps
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+wget -qO - https://raw.githubusercontent.com/stautonico/python-color-scripts/main/install.sh | sudo bash
+sudo python-colorscript --update
+python-colorscript --art sus --256
+
 sudo apt install mongodb
 sudo systemctl start mongodb
 sudo systemctl enable mongodb
@@ -80,7 +86,6 @@ sudo apt install obsidian -y
 sudo apt install discord -y
 sudo apt install gimp -y
 sudo apt install tilix -y
-
 
 # This section is for JetBrains Tool Box
 # Actually, visit their website instead. I'll add this to auto version w/ checks.
