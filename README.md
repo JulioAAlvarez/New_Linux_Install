@@ -1,4 +1,4 @@
-# Fresh Linux?Pop_OS! Install
+# Fresh Linux/Pop_OS! Install
 This is a composition of scripts for applications and customization that I personally prefer when starting from fresh.
 
 <h2>Pissible Todo Tasks</h2>
