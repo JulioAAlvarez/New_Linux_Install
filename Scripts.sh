@@ -65,6 +65,10 @@ git clone https://github.com/julioaalvarez/New_Linux_Install/.poshthemes
 gedit ~/.zshrc # Add in the customization
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/dracula.omp.json)" 
 exec zsh # test the theme chnage
+# So it was like my third time having a funny issue w/ the reinstall and it wasn't working. 
+# Shut down my pc and came back the next day and now it's fine???? No, clue if a hard reset was all i needed for it to exec, but I guess so. 
+
+
 
 # Python install and a fun script when the terminal opens up
 sudo apt install python3 -y
@@ -82,7 +86,7 @@ sudo apt install code -y
 sudo apt install vim -y
 sudo apt install vlc -y
 flatpak install gitkraken -y
-sudo pat install discord -y # Sometimes Discord from website is better.
+sudo pat install discord -y # Sometimes Discord from website is better. # Got the one from the Pop_OS Shop this time around, haha. 
 sudo apt install obs-studio -y
 sudo apt install gimp -y
 sudo apt install tilix -y
