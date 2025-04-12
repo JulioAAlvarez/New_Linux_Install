@@ -55,22 +55,21 @@ gnome-session-quit # Relog (Log out & Log In)
 echo $SHELL ; $SHELL --version # Expected result: '/bin/zsh zsh 5.X'
 # Run ZSH then setup as default
 
-
-
-# Install a font that I like from my own Repo
-git clone https://github.com/JulioAAlvarez/New_Linux_Install/
-# Then install it as usual
+# There Should be more should plug ins to add to ZSh gonna dd them here to test in the VM
+## I normally dont add customizaion and leave emf or late but this script is gonna be a recolection of starting from scratch and adding edits
+# I'll add it to the edits tomorrow when I wake up if it doesn't
  
 # Adds Oh-My-Zsh (OMZ) to ZSH, this expands more features and customization
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-cp ~/.zshrc ~/.zshrc.orig # Backup .zshrc
+cp ~/.zshrc ~/.zshrc.bak # Backup .zshrc
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 gedit ~/.zshrc # Edit some default sections as listed below
 ZSH_THEME="robbyrussell" # The theme most ppl default to, until we get oh-my-posh
 # Not sure if I needed to chsh sine I did it before, but I'll update this again soon.
 # I tend to update my machine quarterly so it will be soon rnough to find out
 
-# Installing the pretty terminal stuff
+# Installing the pretty terminal stuff 
+# it seems that I had this  setup wrong, just follow the directrions more clearly this time around. 
 curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 gedit ~/.zshrc # Add in the prompt
 eval "$(oh-my-posh init zsh)" # Add this to .zshrc
